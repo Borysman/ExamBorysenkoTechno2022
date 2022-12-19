@@ -1,6 +1,7 @@
 FROM python
 
-COPY . /progression.py
+COPY . /app
 
-WORKDIR /
+WORKDIR /app
+
 CMD ["python3", "progression"]
