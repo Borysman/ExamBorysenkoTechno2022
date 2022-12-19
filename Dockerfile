@@ -2,6 +2,5 @@ FROM python
 
 COPY . /progression.py
 
-WORKDIR /progression.py
-
+WORKDIR /
 CMD ["python3", "progression"]
