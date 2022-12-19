@@ -1,7 +1,16 @@
+# FROM python
+
+
+# COPY . /app
+
+# WORKDIR /app
+
+# CMD ["python3", "progression.py"]
+
 FROM python
 
-COPY . /app
+WORKDIR /usr/src/app
 
-WORKDIR /app
+COPY . .
 
-CMD ["python3", "progression"]
+CMD [ "python3", "./progression.py" ]
